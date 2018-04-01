@@ -5,7 +5,7 @@ public class IsAnagram {
 
 public static boolean isAnagram(String s, String t) {
 
-        int[] hash = new int[26];
+        int[] hash = new int[26];//new 一个int数组会自动初始化为0
         for(int i = 0;i<hash.length;i++){
         	 System.out.println(hash[i]);
         }
@@ -22,9 +22,6 @@ public static boolean isAnagram(String s, String t) {
         		return false;
         	}
         }
-       // for (int i : hash) if (i != 0) return false;
-        
-
        return true;
     }
 public static void main(String args[]){
